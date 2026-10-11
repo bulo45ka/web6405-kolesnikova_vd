@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pangolin', 'Comic Sans MS', cursive;
+    background-color: #faf5ff;
+    color: #1f2937;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #1f2937;
+    font-weight: 400;
+}
+
+h1 { font-size: 42px; line-height: 1.2; }
+h2 { font-size: 30px; margin-bottom: 25px; }
+h3 { font-size: 24px; margin-bottom: 10px; }
+
+p { margin-bottom: 12px; }
+
+a { color: #6b46c1; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #faf5ff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-img { height: 55px; width: auto; }
+
+.main-nav { display: flex; gap: 35px; }
+
+.nav-link {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover { color: #8b5cf6; }
+
+.nav-link.active {
+    color: #6b46c1;
+    border-bottom-color: #8b5cf6;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ede9fe;
+    border-radius: 80px;
+}
+
+.hero-image { flex: 1; display: flex; justify-content: center; }
+
+.hero-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.hero-text { flex: 1; }
+
+.hero-eyebrow {
+    font-size: 24px;
+    color: #6b46c1;
+    margin-bottom: 5px;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    margin-bottom: 25px;
+    color: #5b21b6;
+    line-height: 1.15;
+}
+
+.hero-desc {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.familiar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 80px;
+    background-color: #ede9fe;
+    border-radius: 80px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.familiar-text { flex: 1; }
+
+.familiar-text h2 {
+    color: #6b46c1;
+    margin-bottom: 25px;
+    font-size: 34px;
+}
+
+.familiar-list { list-style: none; padding: 0; }
+
+.familiar-list li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    color: #4b5563;
+    font-size: 18px;
+}
+
+.familiar-list li::before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: #8b5cf6;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.familiar-image { flex: 1; display: flex; justify-content: center; }
+
+.clock-img { max-width: 380px; border-radius: 30px; }
+
+.page-content {
+    max-width: 1000px;
+    margin: 40px auto 60px;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    color: #5b21b6;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.section-title-left {
+    color: #5b21b6;
+    margin-bottom: 40px;
+    font-size: 36px;
+    padding-left: 30px;
+}
+
+.benefit-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 50px;
+    margin-bottom: 25px;
+    background-color: #f3e8ff;
+    border-radius: 60px;
+}
+
+.benefit-row.reverse {
+    background-color: #ede9fe;
+    flex-direction: row-reverse;
+}
+
+.benefit-text { flex: 1; }
+
+.benefit-text h3 {
+    color: #6b46c1;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.benefit-eyebrow {
+    color: #5b21b6;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.benefit-text p { color: #4b5563; font-size: 17px; }
+
+.benefit-image {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower-img {
+    max-width: 180px;
+    width: 100%;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 50px;
+    background-color: #f3e8ff;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+
+.review.reverse {
+    flex-direction: row-reverse;
+    background-color: #ede9fe;
+}
+
+.review-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.review-text { flex: 1; }
+
+.review-text p { font-size: 17px; color: #1f2937; margin-bottom: 12px; }
+
+.review-author {
+    color: #6b46c1;
+    text-align: right;
+    font-size: 18px;
+}
+
+.faq-item {
+    background-color: #f3e8ff;
+    padding: 30px 40px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+.faq-item.right { background-color: #ede9fe; }
+
+.faq-item h3 {
+    color: #6b46c1;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.faq-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.faq-body p { color: #4b5563; font-size: 17px; margin: 0; }
+
+.faq-item.right .faq-body {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.pricing-intro {
+    text-align: center;
+    color: #4b5563;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.practices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(107, 70, 193, 0.1);
+}
+
+.practices-table th {
+    background-color: #6b46c1;
+    color: #ffffff;
+    padding: 18px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.practices-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ede9fe;
+    font-size: 17px;
+}
+
+.col-left   { text-align: left;   color: #1f2937; }
+.col-center { text-align: center; color: #4b5563; }
+.col-right  { text-align: right;  color: #6b46c1; }
+
+.practices-table tbody tr:hover { background-color: #faf5ff; }
+
+.note {
+    background-color: #f3e8ff;
+    padding: 18px 25px;
+    border-left: 4px solid #8b5cf6;
+    border-radius: 12px;
+    margin-top: 30px;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+#main-title {
+    color: #5b21b6;
+}
+
+@media (max-width: 800px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero, .familiar, .review, .benefit-row {
+        flex-direction: column;
+        padding: 30px 25px;
+        border-radius: 30px;
+    }
+
+    .hero-text h1 { font-size: 30px; }
+    h2 { font-size: 26px; }
+    .section-title { font-size: 26px; }
+
+    .hero-img, .clock-img, .flower-img { max-width: 100%; }
+
+    .faq-body { flex-direction: column; text-align: center; }
+    .faq-item.right .faq-body { flex-direction: column; text-align: center; }
+}
