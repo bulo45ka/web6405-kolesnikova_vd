@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>плюсы — FUSIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .benefits-grid .benefit-row {
+            flex-direction: column;
+            text-align: center;
+            padding: 40px 30px;
+            margin-bottom: 0;
+            background-color: var(--color-bg-card);
+            border-radius: var(--radius-medium);
+            box-shadow: 0 4px 15px var(--color-shadow);
+            transition: transform var(--transition-speed);
+        }
+        .benefits-grid .benefit-row:hover {
+            transform: translateY(-5px);
+        }
+        .benefits-grid .benefit-row:nth-child(even) {
+            background-color: var(--color-bg-section);
+        }
+        .benefits-grid .benefit-image {
+            flex: auto;
+            margin-bottom: 20px;
+        }
+        .benefits-grid .benefit-text {
+            flex: auto;
+        }
+        @media (max-width: 800px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="about.html" class="logo">
+            <img src="images/logo.png" alt="FUSIC" class="logo-img">
+        </a>
+        <nav class="main-nav">
+            <a href="about.html" class="nav-link">о нас</a>
+            <a href="benefits.html" class="nav-link active">плюсы</a>
+            <a href="reviews.html" class="nav-link">отзывы</a>
+            <a href="faq.html" class="nav-link">вопросы</a>
+            <a href="pricing.html" class="nav-link">тарифы</a>
+            <a href="auth.html" class="nav-link">вход</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <h1 class="section-title">медитации, которые встраиваются в вашу жизнь</h1>
+
+        <div class="benefits-grid">
+            <div class="benefit-row">
+                <div class="benefit-image">
+                    <img src="images/flower.png" alt="" class="flower-img">
+                </div>
+                <div class="benefit-text">
+                    <h3>интуитивный подбор</h3>
+                    <p class="benefit-eyebrow">не гадайте, с чего начать.</p>
+                    <p>
+                        наш AI-ассистент задаст вам пару вопросов и подберёт
+                        персональную программу: от «скорая помощь при тревоге»
+                        до «глубокий сон за 15 минут».
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-row">
+                <div class="benefit-image">
+                    <img src="images/flower.png" alt="" class="flower-img">
+                </div>
+                <div class="benefit-text">
+                    <h3>короткие сессии</h3>
+                    <p class="benefit-eyebrow">у вас нет часа?</p>
+                    <p>
+                        все медитации длятся от 3 до 20 минут. вы можете
+                        практиковать в очереди за кофе, в метро или перед
+                        важной встречей.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-row">
+                <div class="benefit-image">
+                    <img src="images/flower.png" alt="" class="flower-img">
+                </div>
+                <div class="benefit-text">
+                    <h3>звуки природы и гайды</h3>
+                    <p class="benefit-eyebrow">чистый звук.</p>
+                    <p>
+                        записи сделаны в студии высокого качества. выбирайте:
+                        голос лучших российских коучей, проверенные техники
+                        или просто шум дождя, леса и океана.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-row">
+                <div class="benefit-image">
+                    <img src="images/flower.png" alt="" class="flower-img">
+                </div>
+                <div class="benefit-text">
+                    <h3>трекинг прогресса</h3>
+                    <p class="benefit-eyebrow">вы видите результат.</p>
+                    <p>
+                        отмечайте свои ежедневные практики, следите за ростом
+                        осознанности и наблюдайте, как снижается уровень
+                        стресса на графиках.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

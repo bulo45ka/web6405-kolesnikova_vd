@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вход — FUSIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="about.html" class="logo">
+            <img src="images/logo.png" alt="FUSIC" class="logo-img">
+        </a>
+        <nav class="main-nav">
+            <a href="about.html" class="nav-link">о нас</a>
+            <a href="benefits.html" class="nav-link">плюсы</a>
+            <a href="reviews.html" class="nav-link">отзывы</a>
+            <a href="faq.html" class="nav-link">вопросы</a>
+            <a href="pricing.html" class="nav-link">тарифы</a>
+            <a href="auth.html" class="nav-link active">вход</a>
+        </nav>
+    </header>
+
+    <main class="auth-section">
+        <div class="auth-card">
+            <h2 class="auth-title">добро пожаловать</h2>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="login" class="form-label">логин</label>
+                    <input type="text" id="login" class="form-input" placeholder="придумайте логин" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">email</label>
+                    <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">пароль</label>
+                    <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="agreement" class="form-checkbox" required>
+                    <label for="agreement">я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="btn-submit">войти</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
